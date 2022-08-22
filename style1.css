@@ -1,5 +1,101 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=DynaPuff&display=swap');
 
+@keyframes flash {
+    from { color: blueviolet;
+    }
+    to { color:aqua;
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
     background-color: rgba(101, 196, 196, 0.288);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main Blog */
+.Blogimg {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+    color: white;
+    border-radius: 30%; 
+    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.7);
+    /* transition: width 1s; */
+}
+
+.Blogimg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* .bgimage:hover {
+    width: 250px;
+} */
+
+/* .Blogimg:hover .blogtxt {
+    animation: slide 1.5s both;
+}
+
+.Blogimg:not(:hover) .blogtxt {
+    animation: slide 1.5s both reverse;
+} */
+
+.blogtxt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DynaPuff', cursive;
+    font-size: 1.25rem;
+    color: white;
+    height: 200px;
+    padding: 2.5rem 2rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    /* background: #00000066; */
+    transform: translateY(70%);
+    /* transition: transform 1.5s; */
+}
+
+.blogtxt span {
+    opacity: 0;
+    transition: opacity 1s 1.5s;
+    background: rgba(0, 0, 0, 0.664);
+
+}
+
+.Blogimg:hover .blogtxt span {
+    opacity: 1;
+}
+
+.detail {
+    animation: flash 2s infinite alternate;
+
 }
