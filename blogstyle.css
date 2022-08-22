@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Courgette&display=swap');
 
+@keyframes flash {
+    from { color: blueviolet;
+    }
+    to { color:aqua;
+    }
+}
+
 @keyframes button {
     0% { color: rgb(255, 255, 255);
     }
@@ -81,18 +88,59 @@ main article img {
     /* border: 2px solid #8980c2;  */
     box-shadow: 10px 15px 50px rgba(0, 0, 0, 0.589);
     margin: 1rem 1rem 3rem 1rem;
-    float: left;
-    width: 30vw;
-    height: 30vw;
+    /* float: left; */
+    width: 29vw;
+    height: 29vw;
     border-radius: 50%;
     background-size: cover;
 }
 
+article p {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.25rem; 
+}
+
+.detail {
+    animation: flash 2s infinite alternate;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.25rem; 
+}
 
 
-
-
-
+/* Sidebar */
+.sidebar {
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 100px;
+    left: 10px;
+    background: #807b7b63;
+    overflow-x: hidden;
+    padding: 8px 0;
+  }
+  
+  .sidebar a {
+    font-family: 'Architects Daughter' , cursive;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    display: block;
+  }
+  
+  .sidebar a:hover {
+    color: aqua;
+  }
+.sidebar p {
+    font-family: 'Architects Daughter' , cursive;
+    padding: 6px 8px 6px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    display: block;
+}
 
 
 
@@ -138,3 +186,11 @@ footer {
     text-align: center;
     padding: 1rem;   
 }
+
+
+
+/* Media */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
