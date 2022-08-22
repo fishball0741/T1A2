@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=DynaPuff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Courgette&display=swap');
 
 @keyframes flash {
     from { color: blueviolet;
@@ -23,7 +23,7 @@
     padding: 0;
 }
 body {
-    background-color: rgba(255, 255, 255, 0.288);
+    background-color: rgba(0, 0, 0, 0.226);
     display: flex;
     flex-direction: column;
 }
@@ -34,32 +34,46 @@ header {
     justify-content: space-between;
     align-items: center;
     /* padding: 1rem; */
-    background: #bbaa1585;
+    background: #000000c2;
 }
 
 #logo {
-    height: 5vw;
+    height: 3vw;
+    padding: 0rem 18vw 0rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav a {
-    font-family: 'DynaPuff', cursive;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1vw;
     color: white;
     margin: 0 1.5rem;
 }
+nav a:hover {
+    color: aqua;
+}
 
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /* Intro */
 #Me img {
     width: 12vw;
     border-radius: 60%;
 }
 #Me h1 {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Courgette', cursive;
     color: rgb(0, 0, 0);
-    font-size: 5rem;
+    font-size: 3.5rem;
     font-weight: bold;
     margin: 1rem 0;
     background: rgba(128, 123, 123, 0.39);
     padding: 0rem 1rem 0rem 1rem;
+    
 }
 
 #Me {
@@ -73,7 +87,7 @@ nav a {
 
 /* know more about me */
 .button1  {
-    font-family: 'DynaPuff', cursive;
+    font-family: 'Architects Daughter', cursive;
     animation: button 2s infinite alternate;
     display: inline-block;
     font-size: 1rem;
@@ -91,17 +105,18 @@ main {
 }
 
 main h2 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 4rem;
+    font-family: 'Courgette', cursive;
+    font-size: 3.5rem;
     width: 100%;
     text-align: center;
     margin: 0 0 1rem;
 }
 
 main article h3 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.5rem;
-    font-weight: normal;
+    font-family: 'Courgette', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration-line: underline;
     text-align: center;
     color: #000000;
     /* border: 1px dotted; */
@@ -143,7 +158,7 @@ main article {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'DynaPuff', cursive;
+    font-family: 'Architects Daughter', cursive;
     font-size: 1.25rem;
     color: white;
     height: 200px;
@@ -167,16 +182,26 @@ main article {
 }
 
 /* social link again */
+.button2  {
+    font-family: 'Architects Daughter', cursive;
+    animation: button 2s infinite alternate;
+    display: inline-block;
+    font-size: 1rem;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 0.5rem 1rem;
+    margin-left: 2rem;
+}
 #social-links {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #8980c2;
+    background: #000000c2;
     padding: 1rem 0;
 }
 
 #social-links p {
-    font-family: 'Bree Serif', serif;
+    font-family: 'Architects Daughter', cursive;
     margin: 0 0 1rem;
     color: white;
 }
@@ -184,4 +209,9 @@ main article {
 #social-links div div {
     display: flex;
     justify-content: space-between;
+}
+/* footer */
+footer {
+    text-align: center;
+    padding: 1rem;   
 }
