@@ -54,11 +54,12 @@ nav a {
 }
 #Me h1 {
     font-family: 'Dancing Script', cursive;
-    color: rgba(218, 51, 51, 0.575);
-    font-size: 2.25rem;
-    font
-    font-weight: normal;
+    color: rgb(0, 0, 0);
+    font-size: 5rem;
+    font-weight: bold;
     margin: 1rem 0;
+    background: rgba(128, 123, 123, 0.39);
+    padding: 0rem 1rem 0rem 1rem;
 }
 
 #Me {
@@ -70,25 +71,53 @@ nav a {
     background-size: cover;
 }
 
+/* know more about me */
 .button1  {
     font-family: 'DynaPuff', cursive;
     animation: button 2s infinite alternate;
-    font-size: 1.5rem;
+    display: inline-block;
+    font-size: 1rem;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 0.5rem 1rem;
+}
 
+/* Main Blog */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    justify-content: space-around;
+}
+
+main h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 1rem;
+}
+
+main article h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    font-weight: normal;
+    text-align: center;
+    color: #000000;
+    /* border: 1px dotted; */
+    padding: 3rem 1rem 3rem 1rem;
+}
+
+main article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding: 0 2rem;
+    /* border: 1px inset yellow; */
 }
 
 
-
-
-
-
-
-
-
-
-
-
-/* Main Blog */
 .Blogimg {
     position: relative;
     overflow: hidden;
@@ -98,9 +127,8 @@ nav a {
     width: 600px;
     height: 600px;
     color: white;
-    border-radius: 30%; 
+    border-radius: 90%; 
     box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.7);
-    /* transition: width 1s; */
 }
 
 .Blogimg img {
@@ -109,20 +137,7 @@ nav a {
     left: 0;
     width: 100%;
     height: 100%;
-
 }
-
-/* .bgimage:hover {
-    width: 250px;
-} */
-
-/* .Blogimg:hover .blogtxt {
-    animation: slide 1.5s both;
-}
-
-.Blogimg:not(:hover) .blogtxt {
-    animation: slide 1.5s both reverse;
-} */
 
 .blogtxt {
     display: flex;
@@ -134,16 +149,13 @@ nav a {
     height: 200px;
     padding: 2.5rem 2rem;
     border-radius: 0.5rem 0.5rem 0 0;
-    /* background: #00000066; */
-    transform: translateY(70%);
-    /* transition: transform 1.5s; */
+    transform: translateY(30%);
 }
 
 .blogtxt span {
     opacity: 0;
     transition: opacity 1s 1.5s;
     background: rgba(0, 0, 0, 0.664);
-
 }
 
 .Blogimg:hover .blogtxt span {
@@ -152,5 +164,24 @@ nav a {
 
 .detail {
     animation: flash 2s infinite alternate;
+}
 
+/* social link again */
+#social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #8980c2;
+    padding: 1rem 0;
+}
+
+#social-links p {
+    font-family: 'Bree Serif', serif;
+    margin: 0 0 1rem;
+    color: white;
+}
+
+#social-links div div {
+    display: flex;
+    justify-content: space-between;
 }
