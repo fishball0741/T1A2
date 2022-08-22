@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Courgette&display=swap');
 
-@keyframes flash {
-    from { color: blueviolet;
-    }
-    to { color:aqua;
-    }
-}
-
 @keyframes button {
     0% { color: rgb(255, 255, 255);
     }
@@ -59,59 +52,14 @@ div a {
     margin: 0.5vw;
 }
 
-/* Intro */
-#Me img {
-    width: 12vw;
-    border-radius: 60%;
-}
-#Me h1 {
-    font-family: 'Courgette', cursive;
-    color: rgb(0, 0, 0);
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin: 1rem 0;
-    background: rgba(128, 123, 123, 0.39);
-    padding: 0rem 1rem 0rem 1rem;
-    
-}
-
-#Me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    background: url('images/background.jpg') #8980c2 no-repeat center;
-    background-size: cover;
-}
-
-/* know more about me */
-.button1  {
-    font-family: 'Architects Daughter', cursive;
-    animation: button 2s infinite alternate;
-    display: inline-block;
-    font-size: 1rem;
-    text-decoration: none;
-    border: 1px solid;
-    padding: 0.5rem 1rem;
-}
-
-/* Main Blog */
+/* Main */
 main {
     display: flex;
     flex-wrap: wrap;
     padding: 2rem 0;
     justify-content: space-around;
 }
-
-main h2 {
-    font-family: 'Courgette', cursive;
-    font-size: 3.5rem;
-    width: 100%;
-    text-align: center;
-    margin: 0 0 1rem;
-}
-
-main article h3 {
+main article h2 {
     font-family: 'Courgette', cursive;
     font-size: 2rem;
     font-weight: bold;
@@ -128,60 +76,35 @@ main article {
     align-items: center;
     flex: 1;
     padding: 0 2rem;
-    /* border: 1px inset yellow; */
+}
+main article img {
+    /* border: 2px solid #8980c2;  */
+    box-shadow: 10px 15px 50px rgba(0, 0, 0, 0.589);
+    margin: 1rem 1rem 3rem 1rem;
+    float: left;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    background-size: cover;
 }
 
 
-.Blogimg {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 600px;
-    height: 600px;
-    color: white;
-    border-radius: 90%; 
-    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.7);
-}
 
-.Blogimg img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 
-.blogtxt {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Architects Daughter', cursive;
-    font-size: 1.25rem;
-    color: white;
-    height: 200px;
-    padding: 2.5rem 2rem;
-    border-radius: 0.5rem 0.5rem 0 0;
-    transform: translateY(30%);
-}
 
-.blogtxt span {
-    opacity: 0;
-    transition: opacity 1s 1.5s;
-    background: rgba(0, 0, 0, 0.664);
-}
 
-.Blogimg:hover .blogtxt span {
-    opacity: 1;
-}
 
-.detail {
-    animation: flash 2s infinite alternate;
-}
+
+
+
+
+
+
+
 
 /* social link again */
-.button2  {
+
+.button2 {
     font-family: 'Architects Daughter', cursive;
     animation: button 2s infinite alternate;
     display: inline-block;
@@ -191,6 +114,7 @@ main article {
     padding: 0.5rem 1rem;
     margin-left: 2rem;
 }
+
 #social-links {
     display: flex;
     flex-direction: column;
