@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Courgette&display=swap');
 
-@keyframes flash {
-    from { color: blueviolet;
-    }
-    to { color:aqua;
-    }
-}
-
 @keyframes glowing {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
@@ -22,6 +15,13 @@
     }
 }
 
+@keyframes flashing{
+    0%{     color: rgb(219, 35, 35);    }
+    49%{    color: rgb(15, 184, 57); }
+    60%{    color: transparent; }
+    80%{    color:transparent;  }
+    100%{   color: #000;    }
+}
 
 * {
     box-sizing: border-box;
@@ -149,41 +149,7 @@ div a {
     border-radius: 10px;
 }
 
-/* Sidebar */
-.sidebar {
-    width: 180px;
-    position: fixed;
-    z-index: 1;
-    top: 550px;
-    left: 10px;
-    background: #807b7b63;
-    overflow-x: hidden;
-    padding: 8px 0;
-  }
-  
-  .sidebar a {
-    font-family: 'Architects Daughter' , cursive;
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: rgb(255, 255, 255);
-    display: block;
-  }
-  
-  .sidebar a:hover {
-    color: aqua;
-  }
-.sidebar p {
-    font-family: 'Architects Daughter' , cursive;
-    padding: 6px 8px 6px 16px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 35px;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    display: block;
-}
-/* Main Blog */
+/* Main */
 main {
     display: flex;
     flex-wrap: wrap;
@@ -194,15 +160,36 @@ main {
 main h2 {
     font-family: 'Courgette', cursive;
     font-size: 3.5rem;
+    text-decoration-line: underline;
     width: 100%;
     text-align: center;
     margin: 0 0 1rem;
 }
+main div {
+    display: flex;
+    flex-direction: row;
+    flex: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.25rem;
+    font-weight: bold;
+    /* background: #000000c2; */
+    padding: 1rem 0;
+}
 
-main article h3 {
+/* flash word MAIN */
+.flashing{
+    animation:flashing 1.2s infinite;
+}
+
+
+/* CV  */
+main h3 {
     font-family: 'Courgette', cursive;
     font-size: 2rem;
     font-weight: bold;
+    flex: 100%;
     text-decoration-line: underline;
     text-align: center;
     color: #000000;
@@ -210,65 +197,55 @@ main article h3 {
     padding: 3rem 1rem 3rem 1rem;
 }
 
-main article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
-    padding: 0 2rem;
-    /* border: 1px inset yellow; */
-}
-
-
-.Blogimg {
+/* CV button */
+.button{
+    position: fixed;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+.button a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
     position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 600px;
-    height: 600px;
-    color: white;
-    border-radius: 90%; 
-    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.7);
-}
-
-.Blogimg img {
+    transition: all .35s;
+  }
+  
+.button a span{
+    position: relative;
+    z-index: 2;
+  }
+  
+.button a:after{
     position: absolute;
+    content: "";
     top: 0;
     left: 0;
-    width: 100%;
+    width: 0;
     height: 100%;
-}
+    background: #ff003b;
+    transition: all .35s;
+  }
+  
+.button a:hover{
+    color: #fff;
+  }
+  
+ .button a:hover:after{
+    width: 100%;
+  }
 
-.blogtxt {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Architects Daughter', cursive;
-    font-size: 1.25rem;
-    color: white;
-    height: 200px;
-    padding: 2.5rem 2rem;
-    border-radius: 0.5rem 0.5rem 0 0;
-    transform: translateY(30%);
-}
-
-.blogtxt span {
-    opacity: 0;
-    transition: opacity 1s 1.5s;
-    background: rgba(0, 0, 0, 0.664);
-}
-
-.Blogimg:hover .blogtxt span {
-    opacity: 1;
-}
-
-.detail {
-    animation: flash 2s infinite alternate;
-}
-
-/* social link again */
+  /* Social link */
 .button2  {
     font-family: 'Architects Daughter', cursive;
     animation: button 2s infinite alternate;
@@ -293,11 +270,7 @@ main article {
     color: white;
 }
 
-#social-links div div {
-    display: flex;
-    justify-content: space-between;
-}
-/* footer */
+  /* footer */
 footer {
     text-align: center;
     padding: 1rem;   
