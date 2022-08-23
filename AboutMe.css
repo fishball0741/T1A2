@@ -16,6 +16,13 @@
     }
 }
 
+@keyframes fade {
+    from {opacity: 0.4;
+    }
+    to {opacity: 1;
+    }
+  }
+
 
 * {
     box-sizing: border-box;
@@ -39,7 +46,7 @@ header {
 
 #logo {
     height: 3vw;
-    padding: 0rem 14vw 0rem 0rem;
+    padding: 0rem 19vw 0rem 0rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,10 +61,35 @@ nav a {
 nav a:hover {
     color: aqua;
 }
-
 div a {
     margin: 0.5vw;
 }
+
+/* Intro */
+#Me img {
+    width: 12vw;
+    border-radius: 60%;
+}
+#Me h1 {
+    font-family: 'Courgette', cursive;
+    color: rgb(0, 0, 0);
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    background: #807b7b63;
+    padding: 0rem 1rem 0rem 1rem;
+    
+}
+
+#Me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background: url('images/background.jpg') #17161b no-repeat center;
+    background-size: cover;
+}
+
 
 /* Main */
 main {
@@ -66,93 +98,74 @@ main {
     padding: 2rem 0;
     justify-content: space-around;
 }
-main article h2 {
+
+main h2 {
     font-family: 'Courgette', cursive;
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 2.25rem;
+    /* font-weight: bolder; */
     text-decoration-line: underline;
+    width: 100%;
     text-align: center;
-    color: #000000;
-    /* border: 1px dotted; */
-    padding: 3rem 1rem 3rem 1rem;
+    margin: 0 0 1rem;
 }
 
-main article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
-    padding: 0 2rem;
-}
-main article img {
-    /* border: 2px solid #8980c2;  */
-    box-shadow: 10px 15px 50px rgba(0, 0, 0, 0.589);
-    margin: 1rem 1rem 3rem 1rem;
-    /* float: left; */
-    width: 29vw;
-    height: 29vw;
-    border-radius: 50%;
-    background-size: cover;
-}
-
-article p {
+main p {
     font-family: 'Architects Daughter', cursive;
     font-size: 1.25rem; 
-}
-
-.detail {
-    animation: flash 2s infinite alternate;
-    font-family: 'Architects Daughter', cursive;
-    font-size: 1.25rem; 
-}
-
-
-/* Sidebar */
-.sidebar {
-    width: 180px;
-    position: fixed;
-    z-index: 1;
-    top: 100px;
-    left: 10px;
-    background: #807b7b63;
-    overflow-x: hidden;
-    padding: 8px 0;
-  }
-  
-  .sidebar a {
-    font-family: 'Architects Daughter' , cursive;
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: rgb(255, 255, 255);
-    display: block;
-  }
-  
-  .sidebar a:hover {
-    color: aqua;
-  }
-.sidebar p {
-    font-family: 'Architects Daughter' , cursive;
-    padding: 6px 8px 6px 16px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 35px;
     font-weight: bold;
-    color: rgb(0, 0, 0);
-    display: block;
+    padding: 1rem 0rem 1.5rem 0;
 }
 
+/* Main img */
 
+.img {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+    color: white;
+    border-radius: 40%; 
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.877);
+    margin-bottom: 5rem;
+}
 
+.img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
+.txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.75rem;
+    color: white;
+    height: 200px;
+    border-radius: 0.5rem 0.5rem 0 0;
+    transform: translateY(0%);
+    
+}
 
+.txt span {
+    opacity: 0;
+    transition: opacity 0.5s 0.5s;
+    background: rgba(0, 0, 0, 0.664);
+    padding: 0rem 1rem 0rem 1rem;
+}
 
-
-
+.img:hover .txt span {
+    opacity: 1;
+}
 
 /* social link again */
-
-.button2 {
+.button2  {
     font-family: 'Architects Daughter', cursive;
     animation: button 2s infinite alternate;
     display: inline-block;
@@ -162,7 +175,6 @@ article p {
     padding: 0.5rem 1rem;
     margin-left: 2rem;
 }
-
 #social-links {
     display: flex;
     flex-direction: column;
@@ -186,6 +198,9 @@ footer {
     text-align: center;
     padding: 1rem;   
 }
+
+
+
 
 
 
