@@ -30,8 +30,12 @@ I designed all the pages can linked to each other because it is more convenient 
 ![Sitemap](./Screenshots/sitemap.png)
 
 Screenshots
+![mainpage](./Screenshots/main1.0.png)
+![footer](./Screenshots/main_footer.png)
+![blog](./Screenshots/blog.png)
+![aboutme](./Screenshots/aboutme.png)
+![contactme](./Screenshots/contactme.png)
 
-<!--insert screenshots .png -->
 
 Target Audience
 This portfolio was created for showing what I learnt from Coder Academy such as Html, CSS, Terminal using etc.
