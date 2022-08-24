@@ -2,7 +2,7 @@
 
 
 ## Portfolio >    
-http://127.0.0.1:5500/index.html
+https://fishball0741.github.io/T1A2/
 
 ## Github >    
 https://github.com/fishball0741/T1A2
