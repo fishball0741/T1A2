@@ -229,21 +229,21 @@ footer {
         height: 300px;
     }
     main article p {
-        font-size: 0.1px;
+        font-size: 0.5rem;
     }
 
     /* Next/Previous button */
     .detail {
-        font-size: 0.1px;
+        font-size: 0.5rem;
     }
 
     /* social */
 
     #social-links div {
-        font-size: 0.1px;
+        font-size: 0.5rem;
     }
     .button2{
-        font-size: 0.1px;
+        font-size: 0.5rem;
     }
     #social-links img {
         width: 20px;
@@ -251,6 +251,6 @@ footer {
     }
     /* footer */
     footer {
-        font-size: 0.1px;
+        font-size: 0.5rem;
     }
 }

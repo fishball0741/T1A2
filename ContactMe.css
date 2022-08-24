@@ -204,7 +204,7 @@ main h3 {
     height: 40px;
     line-height: 40px;
     font-size: 18px;
-    font-family: sans-serif;
+    font-family: 'Architects Daughter' , cursive;
     text-decoration: none;
     color: #333;
     border: 2px solid #333;
@@ -298,26 +298,26 @@ footer {
 
     /* Intro */
     #Me h1 {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     #Me a {
-        font-size: 1px;
+        font-size: 0.5rem;
     }
 
      /* Main */
     main h2 {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
     .flashing {
-        font-size: 1px;
+        font-size: 0.5rem;
     }
     main img {
         width: 20px;
         height: 20px;
     }
     .button span {
-        font-size: 1px;
+        font-size: 0.5rem;
         width: 20px;
         height: 20px;
         /* flex: 100%; */
@@ -326,26 +326,26 @@ footer {
         width: 100px;
     }
     main h3{
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
 
     main p {
-        font-size: 0.1px;
+        font-size: 0.5rem;
     }
 
     
     /* social */
 
     #social-links div {
-        font-size: 0.1px;
+        font-size: 0.5rem;
     }
 
     .button2{
-        font-size: 0.1px;
+        font-size: 0.5rem;
     }
 
     /* footer */
     footer {
-        font-size: 0.1px;
+        font-size: 0.5rem;
     }
 }

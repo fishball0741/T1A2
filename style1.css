@@ -351,16 +351,16 @@ footer {
         height: 300px;
    }
     .blogtxt {
-        font-size: 0.1px;
+        font-size: 0.5rem;
         transform: translateY(0%);
     }
     /* social */
     #social-links {
-        font-size: 0.1px;
+        font-size: 0.5rem;
     }
 
     .button2{
-        font-size: 0.1px;
+        font-size: 0.5rem;
     }
 
     #social-links img {
@@ -369,6 +369,6 @@ footer {
     }
     /* footer */
     footer {
-        font-size: 0.1px;
+        font-size: 0.5rem;
     }
 }
