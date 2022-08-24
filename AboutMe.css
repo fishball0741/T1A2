@@ -114,6 +114,8 @@ main p {
     font-size: 1.25rem; 
     font-weight: bold;
     padding: 1rem 0rem 1.5rem 0;
+    text-align: center;
+    flex: 100%;
 }
 
 /* Main img */
