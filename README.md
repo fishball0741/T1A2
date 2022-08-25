@@ -9,7 +9,7 @@
 <https://github.com/fishball0741/T1A2>
 
 ### Presentation Link >
-<!-- http -->
+
 <https://www.youtube.com/watch?v=tNLJaV74eYY>
 
 ### Purpose
@@ -45,29 +45,29 @@ There are 5 different blog pages for the viewers. Those are my happies memories 
 #### Sitemap
 
 ---
-![Sitemap](./Screenshots/sitemap1.png)
+![Sitemap](./docs/sitemap1.png)
 
 #### Screenshots
 
 ---
 
-![mainpage](./Screenshots/finalmain.png)
+![mainpage](./docs/finalmain.png)
 
 ---
 
-![blog](./Screenshots/blog.png)
+![blog](./docs/blog.png)
 
 ---
 
-![blogpage](./Screenshots/post.png)
+![blogpage](./docs/post.png)
 
 ---
 
-![contactme](./Screenshots/contactme.png)
+![contactme](./docs/contactme.png)
 
 ---
 
-![accessibility](./Screenshots/Accessibility.png)
+![accessibility](./docs/Accessibility.png)
 
 ---
 
