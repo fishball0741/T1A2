@@ -2,7 +2,7 @@
 
 ## Portfolio >
 
-<https://fishball0741.github.io/T1A2/>
+<https://fishball0741.github.io/T1A2/src>
 
 ## Github >
 
