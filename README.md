@@ -67,7 +67,7 @@ There are 5 different blog pages for the viewers. Those are my happies memories 
 
 ---
 
-![accessibility](./Screenshots/accessibility.png)
+![accessibility](./Screenshots/Accessibility.png)
 
 ---
 
